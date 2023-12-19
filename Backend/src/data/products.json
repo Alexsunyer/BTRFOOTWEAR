@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Air Force",
+    "category": 2,
+    "description": "The Nike Air Force is iconic in the world of athletic footwear. It offers comfort and style with every step, perfect for both everyday use and sports activities.",
+    "price": 120.99
+  },
+  {
+    "name": "Dunk Low Retro",
+    "category": 2,
+    "description": "The Nike Dunk Low Retro combines a classic design with modern colors. Its versatile style makes it a popular choice among urban fashion enthusiasts.",
+    "price": 89.99
+  },
+  {
+    "name": "Nike Blazer",
+    "category": 2,
+    "description": "The Nike Blazer is a reinvented classic. With its high profile and distinctive style, it offers a retro look that fits current trends.",
+    "price": 79.99
+  },
+  {
+    "name": "Air Max",
+    "category": 2,
+    "description": "The Nike Air Max is known for its visible cushioning unit in the heel, providing comfort and style. Perfect for those seeking athletic footwear with advanced technology.",
+    "price": 134.99
+  },
+  {
+    "name": "Air Max Plus",
+    "category": 2,
+    "description": "The Nike Air Max Plus combines cushioning and bold design. With its characteristic stripe and striking details, it's a popular choice among sports fashion enthusiasts.",
+    "price": 149.99
+  },
+  {
+    "name": "Air Jordan 1 Mid",
+    "category": 3,
+    "description": "The Nike Air Jordan 1 Mid is a timeless classic in the basketball world. With its legendary design and versatile style, it's ideal both on and off the court.",
+    "price": 169.99
+  },
+  {
+    "name": "Air Jordan 1 Low",
+    "category": 3,
+    "description": "The Nike Air Jordan 1 Low captures the essence of basketball in a versatile design. With modern colors and classic details, it's a stylish choice for any occasion.",
+    "price": 129.99
+  },
+  {
+    "name": "Air Jordan 3 Retro",
+    "category": 3,
+    "description": "The Nike Air Jordan 3 Retro is famous for its elephant print and innovative design. A blend of history and contemporary style for brand enthusiasts.",
+    "price": 199.99
+  },
+  {
+    "name": "Air Jordan 11 Retro",
+    "category": 3,
+    "description": "The Nike Air Jordan 11 Retro is legendary in the basketball world. With its eye-catching design and cutting-edge technology, it delivers exceptional performance on the court.",
+    "price": 219.99
+  },
+  {
+    "name": "Jordan Pro Strong",
+    "category": 3,
+    "description": "The Nike Jordan Pro Strong pays tribute to Jordan's legacy. With its classic design and modern details, it offers performance and style with every step.",
+    "price": 179.99
+  },
+  {
+    "name": "Infinity RN4",
+    "category": 4,
+    "description": "The Nike Infinity RN 4 are running shoes designed to provide comfort and support on every run. With responsive cushioning and a secure fit, they're ideal for runners.",
+    "price": 129.99
+  },
+  {
+    "name": "Pegasus 40 SE",
+    "category": 4,
+    "description": "The Nike Pegasus 40 SE is a benchmark in the running world. With its combination of cushioning and speed, it's ideal for runners of all levels.",
+    "price": 149.99
+  },
+  {
+    "name": "Invincible 3",
+    "category": 4,
+    "description": "The Nike Invincible 3 are high-performance running shoes. With their soft cushioning and energy return, they provide comfort on long distances.",
+    "price": 179.99
+  },
+  {
+    "name": "Zoom Fly 5",
+    "category": 4,
+    "description": "The Nike Zoom Fly 5 is designed for speed and efficiency in races. With its carbon plate and responsive cushioning, it offers an extra boost with every stride.",
+    "price": 159.99
+  },
+  {
+    "name": "Vapor Fly 3",
+    "category": 4,
+    "description": "The Nike VaporFly 3 are favorites among elite runners. Designed for exceptional performance, they provide a combination of lightweight and speed.",
+    "price": 249.99
+  },
+  {
+    "name": "Tiempo Legend 10",
+    "category": 5,
+    "description": "The Nike Tiempo Legend 10 is a classic in the football world. With its premium leather and perfect fit, it offers control and precision on the field.",
+    "price": 179.99
+  },
+  {
+    "name": "Phantom GX Elite",
+    "category": 5,
+    "description": "The Nike Phantom GX Elite is ideal for creative players. With its low-cut design and extended impact zone, it allows exceptional ball control.",
+    "price": 199.99
+  },
+  {
+    "name": "Mercurial Superfly 9",
+    "category": 5,
+    "description": "The Nike Mercurial Superfly 9 is synonymous with speed in football. With its snug fit and agile traction, it's designed for explosive players.",
+    "price": 229.99
+  },
+  {
+    "name": "Mercurial Vapor 15",
+    "category": 5,
+    "description": "The Nike Mercurial Vapor 15 offers speed and agility. With its lightweight construction and improved traction, it's ideal for outpacing opponents.",
+    "price": 199.99
+  },
+  {
+    "name": "Phantom Luna",
+    "category": 5,
+    "description": "The Nike Phantom Luna is indoor football footwear designed for control and agility in confined spaces. Its low-cut design provides freedom of movement.",
+    "price": 99.99
+  },
+  {
+    "name": "LeBron NXXT",
+    "category": 6,
+    "description": "The Nike LeBron NXXT is the choice of powerful players. With advanced cushioning and reinforced support, it offers performance and style on the basketball court.",
+    "price": 219.99
+  },
+  {
+    "name": "Luka 1",
+    "category": 6,
+    "description": "The Nike Luka 1 is basketball footwear designed in collaboration with Luka Dončić. With its unique style and cutting-edge technology, it pays homage to the game's star.",
+    "price": 189.99
+  },
+  {
+    "name": "LeBron 20",
+    "category": 6,
+    "description": "The Nike LeBron 20 combines style and performance in basketball. With its eye-catching design and innovative technology, it provides support and traction on the court.",
+    "price": 249.99
+  },
+  {
+    "name": "Precision 6",
+    "category": 6,
+    "description": "The Nike Precision 6 is ideal for versatile play in basketball. With its comfortable fit and multidirectional traction, it offers agility in every move.",
+    "price": 129.99
+  },
+  {
+    "name": "Zion 2",
+    "category": 6,
+    "description": "The Nike Zion 2 is Zion Williamson's footwear. With its reactive cushioning and striking design, it's designed for explosive and energetic players.",
+    "price": 199.99
+  },
+  {
+    "name": "Metcon 9",
+    "category": 7,
+    "description": "The Nike Metcon 9 is versatile training footwear. With its durability and stability, it's ideal for a variety of exercises in the gym.",
+    "price": 139.99
+  },
+  {
+    "name": "Metcon 5",
+    "category": 7,
+    "description": "The Nike Metcon 5 is known for its resilience in the most intense workouts. With its support and traction, it provides confidence in every movement.",
+    "price": 119.99
+  },
+  {
+    "name": "MC Trainer 2",
+    "category": 7,
+    "description": "The Nike MC Trainer 2 is ideal for cross-training. With its lightweight and versatility, it adapts to different types of exercise.",
+    "price": 89.99
+  },
+  {
+    "name": "Alpha Trainer 5",
+    "category": 7,
+    "description": "The Nike Alpha Trainer 5 is training footwear with a focus on comfort. With its cushioning and support, it's perfect for long training sessions.",
+    "price": 79.99
+  },
+  {
+    "name": "Super Rep Go 3",
+    "category": 7,
+    "description": "The Nike SuperRep Go 3 is ideal for high-intensity workouts. With its easy on-and-off design, it offers support and flexibility in movements.",
+    "price": 109.99
+  }
+]

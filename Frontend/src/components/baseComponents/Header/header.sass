@@ -1,0 +1,89 @@
+.header-container
+    background: #e4e4e4
+    display: flex
+    flex-wrap: wrap
+    padding: 20px 20px
+    .header-container,.header-right,.header-left,.header-center
+        align-items: center
+    .header-left
+        width: 30%
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        font-size: 4em
+        .product-search
+            position: relative
+            background: #fff
+            border-radius: 10px
+            padding: 0px 20px
+            width: 70px
+            height: 70px
+            svg
+                width: 28px
+                cursor: pointer
+                margin-bottom: 7px
+                margin-left: 2px
+            svg:hover
+                transform: scale(1.15)
+            .product-search-modal
+                position: absolute
+                top: calc(100% + 10px)
+                left: 0%
+                background: #fff
+                border-radius: 10px
+                border: 2px solid rgba(126, 63, 63, 0.8)
+                z-index: 2
+                width: 400px
+                max-height: 80vh
+                display: flex
+                flex-direction: column
+                align-items: center
+                padding: 20px 10px
+                background: #DBCACA
+                input
+                    width: 90%
+                    border-radius: 5px
+                    border: 2px solid rgba(126, 63, 63, 0.8)
+    .header-center
+        width: 40%
+        display: flex
+        justify-content: center
+    .header-right
+        width: 30%
+        display: flex
+        justify-content: flex-end
+        font-size: 14px
+        &>div
+            margin-left: 20px
+        .user-logged-navbar
+            display: flex
+            flex-direction: row
+            align-items: center
+            gap: 10px
+            svg
+                margin-right: 5px
+            .logout, button:not(.username)
+                background-color: rgb(126, 63, 63)
+                padding: 9px 20px
+                border-radius: 10px
+                color: #ffff
+                &:hover
+                    background-color: rgb(145, 80, 80)
+                    transform: scale(1.05)
+            .username
+                background-color: rgb(126, 63, 63)
+                padding: 9px 20px
+                border-radius: 10px
+                color: #ffff
+        .button-login
+            background-color: rgb(126, 63, 63)
+            padding: 9px 20px
+            border-radius: 10px
+            color: #ffff
+            &:hover
+                background-color: rgb(145, 80, 80)
+                transform: scale(1.05)
+    .logo
+        object-fit: cover
+        height: 100px
+        width: 250px

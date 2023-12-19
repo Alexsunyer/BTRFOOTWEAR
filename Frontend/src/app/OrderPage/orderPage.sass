@@ -1,0 +1,394 @@
+.order-page
+    position: relative
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: 1fr
+    padding: 20px
+    align-items: center
+    min-height: 650px
+    .home-button
+        position: absolute
+        left: 20px
+        top: 30px
+        padding: 20px
+        background-color: #8b3d3d
+        border-radius: 10px
+        &:hover
+            background-color: #7a3535
+        svg
+            color: #ffff
+            font-size: 30px
+    .order-steps
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        padding-right: 50px
+        border-right: 5px dotted rgba(139, 61, 61, 0.5)
+        .user-order-info-form
+            display: flex
+            flex-direction: column
+            align-items: center
+            gap: 10px
+            border-radius: 10px
+            width: 430px
+            height: 590px
+            background-color: #E4E4E4
+            h1
+                margin-top: 20px
+                font-size: 20px
+                font-weight: bolder
+            .user-order-info-form-list
+                display: flex
+                flex-direction: column
+                gap: 3px
+                padding: 20px
+                margin: 10px 15px
+                border-radius: 10px
+                background-color: #dbcaca
+                border: 2px solid rgba(75, 64, 64, 0.2)
+                li
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    padding: 5px
+                    width: 330px
+                    label
+                        font-weight: bolder
+                        font-size: 13px
+                        width: 70px
+                        text-align: center
+                input
+                    border: none
+                    border-radius: 5px
+                    width: 230px
+                    font-size: 13px
+                    &:placeholder-shown
+                        font-style: italic
+                .input-select
+                    width: 230px
+                    border-radius: 5px
+                    background-color: white
+                    font-size: 13px
+                    &:placeholder-shown
+                        font-style: italic
+        .user-shipping-method-form
+            display: flex
+            flex-direction: column
+            align-items: center
+            gap: 30px
+            border-radius: 10px
+            width: 400px
+            height: 590px
+            background-color: #E4E4E4
+            h1
+                margin-top: 30px
+                font-size: 20px
+                font-weight: bolder
+            .user-shipping-method-form-list
+                display: flex
+                flex-direction: column
+                padding: 10px
+                gap: 30px
+                li
+                    display: flex
+                    gap: 20px
+                    align-items: center
+                    padding: 8px
+                    input
+                        appearance: none
+                        -webkit-appearance: none
+                        -moz-appearance: none
+                        width: 18px
+                        height: 18px
+                        border-radius: 50%
+                        outline: none
+                        cursor: pointer
+                        color: #7A3535
+                    .user-shipping-method-info
+                        position: relative
+                        width: 280px
+                        display: flex
+                        gap: 10px
+                        align-items: center
+                        padding: 12px
+                        border-radius: 15px
+                        background-color: #ffffff
+                        cursor: pointer
+                        &:hover
+                            background-color: #dbcaca
+                            transform: scale(1.05)
+                        img
+                            width: 40px
+                        div p
+                            font-size: 11px
+                            width: 100px
+                        span
+                            position: absolute
+                            right: 20px
+        .step3
+            display: flex
+            align-items: center
+            gap: 30px
+            margin-top: 10px
+            .user-payment-billingAddress-container
+                display: flex
+                flex-direction: column
+                gap: 50px
+                .user-payment-container
+                    display: flex
+                    flex-direction: column
+                    gap: 15px
+                    padding: 20px
+                    border-radius: 10px
+                    background-color: #E4E4E4
+                    h1
+                        font-size: 20px
+                        font-weight: bolder
+                    .user-payment-list
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        gap: 20px
+                        li
+                            background-color: #dbcaca
+                            border: 2px solid rgba(75, 64, 64, 0.2)
+                            border-radius: 10px
+                            width: 395px
+                            .credit-card-info
+                                display: flex
+                                flex-direction: column
+                                padding: 20px
+                                padding-top: 0
+                                gap: 20px
+                                input
+                                    border-radius: 10px
+                                    background-color: #ffffff
+                                    border: none
+                                & div
+                                    display: flex
+                                    justify-content: space-between
+                                    & input
+                                        width: 150px
+                            label
+                                display: flex
+                                align-items: center
+                                gap: 20px
+                                padding: 25px
+                                input
+                                    appearance: none
+                                    -webkit-appearance: none
+                                    -moz-appearance: none
+                                    width: 18px
+                                    height: 18px
+                                    border-radius: 50%
+                                    outline: none
+                                    cursor: pointer
+                                .creditCardsIMG
+                                    display: flex
+                                    margin-left: 20px
+                                    img
+                                        width: 30px
+                                        height: 20px
+                                        object-fit: cover
+                                #paypalLogo
+                                    width: 100px
+            .user-billing-address-container
+                display: flex
+                flex-direction: column
+                gap: 15px
+                padding: 20px
+                background-color: #E4E4E4
+                border-radius: 10px
+                h1
+                    font-size: 20px
+                    font-weight: bolder
+                .user-billing-address-list
+                    display: flex
+                    flex-direction: column
+                    gap: 20px
+                    label
+                        display: flex
+                        align-items: center
+                        gap: 20px
+                        padding: 20px
+                        background-color: #dbcaca
+                        border: 2px solid rgba(75, 64, 64, 0.2)
+                        border-radius: 10px
+                        input
+                                appearance: none
+                                -webkit-appearance: none
+                                -moz-appearance: none
+                                width: 18px
+                                height: 18px
+                                border-radius: 50%
+                                outline: none
+                                cursor: pointer
+                    .new-billing-address-form
+                        margin-top: 30px
+                        .new-billing-address-form-list
+                            display: flex
+                            flex-direction: column
+                            gap: 3px
+                            padding: 20px
+                            margin: 10px 15px
+                            border-radius: 10px
+                            background-color: #dbcaca
+                            border: 2px solid rgba(75, 64, 64, 0.2)
+                            li
+                                display: flex
+                                justify-content: space-between
+                                align-items: center
+                                padding: 5px
+                                width: 330px
+                                label
+                                    font-weight: bolder
+                                    padding: 0
+                                    border: none
+                            input
+                                border: none
+                                border-radius: 5px
+                                width: 230px
+                            .input-select
+                                width: 230px
+                                background-color: #ffff
+                                border-radius: 5px
+        .step4
+            display: flex
+            flex-direction: column
+            align-items: center
+            gap: 20px
+            margin-top: 30px
+            margin-left: 200px
+            margin-right: 50px
+            margin-bottom: 200px
+            #thankyou
+                object-fit: contain
+            .purchased-successfully
+                background-color: #E4E4E4
+                border-radius: 5px
+                padding: 20px
+                h1
+                    font-size: 20px
+                    text-align: center
+                    font-weight: bolder
+                p
+                    padding: 10px
+                    text-align: center
+                    line-height: 30px
+            button
+                padding: 10px 15px
+                font-size: 20px
+                border-radius: 10px
+                background-color: #8b3d3d
+                color: #ffff
+                p
+                    padding-bottom: 2px
+                svg
+                    font-size: 20px
+                    margin-left: 10px
+                &:hover
+                    background-color: #7a3535
+    .order-page-right
+        display: flex
+        justify-content: center
+        .order-right-window
+            position: absolute
+            top: 30px
+            right: 220px
+            display: flex
+            flex-direction: column
+            gap: 10px
+            border-radius: 10px
+            padding: 15px 25px
+            min-width: 400px
+            max-width: 500px
+            background-color: #E4E4E4
+            .number-items-and-price
+                background-color: #ffff
+                border-radius: 10px
+                padding: 0 10px
+                display: flex
+                justify-content: space-between
+                h2 span
+                    font-weight: bolder
+            .order-products
+                width: fit-content
+                max-width: 100%
+                display: flex
+                gap: 15px
+                padding: 0 10px
+                padding-bottom: 25px
+                border: 2px solid rgba(75, 64, 64, 0.2)
+                border-radius: 10px
+                overflow: auto
+                scroll-behavior: smooth
+                background-color: #dbcaca
+                .individual-order-product
+                    position: relative
+                    display: inline-block
+                    width: 105px
+                    min-height: 155px
+                    background-color: #F6F6F6
+                    padding: 10px
+                    margin-top: 10px
+                    border: 1px solid rgba(56, 28, 28, 0.2)
+                    border-radius: 10px
+                    box-shadow: 2px 2px 10px rgba(126, 63, 63, 0.6)
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    gap: 10px
+                    .SP-product-quantity
+                        position: absolute
+                        top: 7px
+                        left: 7px
+                        font-size: 12px
+                        background-color: #7a3535
+                        border-radius: 50%
+                        color: #ffff
+                        min-width: 20px
+                        min-height: 20px
+                        text-align: center
+                    img
+                        width: 70px
+                    & div
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        h2
+                            font-size: 11px
+                            text-align: center
+                            width: 85px
+                        span
+                            position: absolute
+                            bottom: 5px
+                            font-weight: bolder
+            h3, h2 span
+                font-weight: bolder
+            .order-info
+                font-size: 12px
+
+.buttons-submit
+    width: 100%
+    display: flex
+    justify-content: space-evenly
+    align-items: center
+    padding: 10px
+    margin-bottom: 20px
+    button
+        padding: 10px 15px
+        font-size: 20px
+        border-radius: 10px
+        background-color: #8b3d3d
+        color: #ffff
+        p
+            padding-bottom: 2px
+        svg
+            font-size: 20px
+            margin-left: 10px
+        &:hover
+            background-color: #7a3535
+.billing-address
+    margin: 0
+
+

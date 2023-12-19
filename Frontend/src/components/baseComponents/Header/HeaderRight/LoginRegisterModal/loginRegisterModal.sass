@@ -1,0 +1,92 @@
+.login-modal
+    position: fixed
+    top: 0
+    right: 0
+    left: 0
+    bottom: 0
+    background-color: rgba(0, 0, 0, 0.5)
+    z-index: 2
+    display: flex
+    justify-content: center
+    .login-modal-whitebox
+        position: relative
+        background-color: #fff
+        padding: 0 30px
+        border-radius: 15px
+        margin: 8% 0
+        width: 350px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        .close-window
+            position: absolute
+            padding: 0 7px
+            background-color: #bec2db
+            border-radius: 10px
+            right: 10px
+            top: 10px
+        .close-window:hover
+            color: #fff
+        .login-form, .register-form
+            display: flex
+            flex-direction: column
+            .error-message
+                text-align: center
+                color: #ff4f4f
+            h2
+                text-align: center
+                letter-spacing: 5px
+                border-bottom: 2px solid #9ea2be
+                font-weight: 700
+                font-size: 20px
+                color: #0b0e20
+            label
+                font-size: 15px
+                font-weight: 500
+                color: #0b0e20
+            .submit
+                align-self: center
+                padding: 5px
+                border-radius: 3px
+                background-color: rgb(190, 194, 219)
+                border: 1px solid rgba(0, 0, 0, 0.5)
+                box-shadow: 1px 1px 1px rgba(57, 58, 66, 0.6)
+                width: 30%
+                color: #0b0e20
+                letter-spacing: 1px
+            .submit:hover
+                box-shadow: none
+                p
+                    transform: scale(0.95)
+            button:not(.submit)
+                color: #2f00ff
+                font-weight: 700
+                &:hover
+                    color: #1a0674
+            h3
+                align-self: center
+                color: #0b0e20
+            input
+                border-radius: 5px
+        .login-form
+            gap: 8px
+            h2
+                margin-bottom: 30px
+            input, .submit
+                margin-bottom: 25px
+        .register-form
+            overflow: auto
+            height: 400px
+            gap: 10px
+            h2
+                font-size: 18px
+            label
+                font-size: 12px
+            input
+                height: 30px
+                font-size: 10px
+            h3
+                font-size: 12px
+            .submit
+                margin-top: 10px
+                margin-bottom: 5px
