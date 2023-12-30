@@ -15,6 +15,7 @@
         border-radius: 15px
         margin: 8% 0
         width: 350px
+        max-height: 515px
         display: flex
         flex-direction: column
         justify-content: center
@@ -90,3 +91,11 @@
             .submit
                 margin-top: 10px
                 margin-bottom: 5px
+
+$mobile-breakpoint: 600px
+$tablet-breakpoint: 768px
+$desktop-breakpoint: 1024px
+
+@media screen and (max-width: $mobile-breakpoint)
+    .login-modal
+        width: 375px

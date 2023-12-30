@@ -8,7 +8,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { AllReduxPayloads } from "../../../../../utils/reducers";
 import { ConnectedProps, connect } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   ShoppingCartPayload,
   ShoppingCartProduct,
@@ -19,6 +19,7 @@ import {
 } from "../../../../../utils/reducers/reduxDispatch";
 import { useState } from "react";
 import "./shoppingCartHeader.sass";
+import toast from "react-hot-toast";
 
 interface ShoppingCartHeaderProps extends ReduxCart {}
 
@@ -38,7 +39,7 @@ const ShoppingCartHeader: React.FC<ShoppingCartHeaderProps> = ({
           setOpen={setOpen}
         />
       ) : null}
-      <span>
+      <span className="SP-total-price">
         {shoppingCart?.price
           ? Math.round(shoppingCart?.price * 100) / 100
           : "0.00"}{" "}
@@ -53,15 +54,17 @@ const useShoppingCartLogic = () => {
   return { open, setOpen };
 };
 
-interface ShoppingCartHeaderModalProps {
-  shoppingCart: ShoppingCartPayload;
-  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
-}
+interface ShoppingCartHeaderModalProps
+  extends ShoppingCartHeaderModalLogicProps {}
 
 const ShoppingCartHeaderModal: React.FC<ShoppingCartHeaderModalProps> = ({
   shoppingCart,
   setOpen,
 }) => {
+  const { handleCheckout } = useShoppingCartHeaderModalLogic({
+    shoppingCart,
+    setOpen,
+  });
   const renderThis: JSX.Element[] = [];
   const productQuantities: number[] = [];
   const shoppingCartProducts = shoppingCart?.ShoppingCartProducts;
@@ -120,19 +123,37 @@ const ShoppingCartHeaderModal: React.FC<ShoppingCartHeaderModalProps> = ({
           <FontAwesomeIcon icon={faArrowLeft} />
           Continue shopping
         </button>
-        <Link to="/order">
-          <button
-            className="checkout"
-            onClick={() => {
-              setOpen(false);
-            }}
-          >
-            Checkout <FontAwesomeIcon icon={faCreditCard} />
-          </button>
-        </Link>
+        <button className="checkout" onClick={handleCheckout}>
+          Checkout <FontAwesomeIcon icon={faCreditCard} />
+        </button>
       </div>
     </div>
   );
+};
+
+interface ShoppingCartHeaderModalLogicProps {
+  shoppingCart: ShoppingCartPayload;
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const useShoppingCartHeaderModalLogic = ({
+  shoppingCart,
+  setOpen,
+}: ShoppingCartHeaderModalLogicProps) => {
+  const navigate = useNavigate();
+  const shoppingCartProducts = shoppingCart?.ShoppingCartProducts;
+
+  const handleCheckout = () => {
+    if (shoppingCartProducts) {
+      if (shoppingCartProducts?.length > 0) {
+        navigate("/order");
+        setOpen(false);
+      } else {
+        toast.error("Your shopping cart is empty");
+      }
+    }
+  };
+  return { handleCheckout };
 };
 
 interface IndividualShoppingCartProductProps {

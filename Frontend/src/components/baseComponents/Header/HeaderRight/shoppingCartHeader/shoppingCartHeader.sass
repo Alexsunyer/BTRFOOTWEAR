@@ -1,8 +1,10 @@
 .shopping-cart
-    background: #fff
+    background-color: rgb(126, 63, 63)
     padding: 10px
     border-radius: 10px
     position: relative
+    svg:not(#deleteShopingCart svg, .shopping-cart-header-actions svg, .price_AddToCart svg), .SP-total-price
+        color: #ffff
     svg
         cursor: pointer
         margin-right: 10px
@@ -49,7 +51,7 @@
         .shopping-cart-header-actions
             display: flex
             justify-content: space-between
-            button:nth-child(1)
+            button
                 font-size: 13px
                 padding: 2px 5px
                 border-radius: 5px
@@ -108,3 +110,51 @@
                 height: 30px
                 display: flex
                 align-items: center
+
+$mobile-breakpoint: 600px
+$tablet-breakpoint: 768px
+$desktop-breakpoint: 1024px
+
+@media screen and (max-width: $mobile-breakpoint)
+    .shopping-cart
+        width: 45px
+        height: 45px
+        display: flex
+        justify-content: center
+        align-items: center
+        background-color: rgb(126, 63, 63)
+        svg:not(#deleteShopingCart svg, .shopping-cart-header-actions svg, .price_AddToCart svg)
+            margin-right: 0
+            font-size: 20px
+            color: #ffff
+        .SP-total-price
+            display: none
+        .shopping-cart-modal
+            width: 335px
+            .shopping-cart-products-list
+                flex-wrap: nowrap
+                justify-content: flex-start
+                overflow-x: auto
+                scroll-behavior: smooth
+                width: auto
+                white-space: nowrap
+                p
+                    margin-left: 20%
+            .individual-SP-product
+                flex-shrink: 0
+                .price_AddToCart
+                    flex-direction: column
+                    height: 30%
+                    justify-content: space-around
+                    span
+                        text-align: center
+
+@media screen and (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint - 1)
+    .shopping-cart
+        height: 45px
+        display: flex
+        justify-content: center
+        align-items: center
+        background-color: rgb(126, 63, 63)
+        svg:not(#deleteShopingCart svg, .shopping-cart-header-actions svg, .price_AddToCart svg), .SP-total-price
+            color: #ffff

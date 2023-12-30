@@ -61,3 +61,49 @@
                 font-size: 10px
     .individual-product:hover
         transform: scale(1.05)
+
+$mobile-breakpoint: 600px
+$tablet-breakpoint: 768px
+$desktop-breakpoint: 1024px
+
+@media screen and (max-width: $mobile-breakpoint)
+    .product-search-list
+        gap: 30px
+        .individual-product
+            width: 130px
+            .product-listing-image
+                #plus
+                    display: none
+            h2, span, button
+                font-size: 13px
+            .price_AddToCart
+                span, button
+                    height: 20px
+                span
+                    padding: 0 5px
+                svg
+                    padding-top: 2px
+                    font-size: 14px
+        .individual-product:hover
+            transform: scale(1.05)
+
+@media screen and (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint - 1)
+    .product-search-list
+        gap: 30px
+        .individual-product
+            width: 130px
+            .product-listing-image
+                #plus
+                    display: none
+            h2, span, button
+                font-size: 13px
+            .price_AddToCart
+                span, button
+                    height: 20px
+                span
+                    padding: 0 5px
+                svg
+                    padding-top: 2px
+                    font-size: 14px
+        .individual-product:hover
+            transform: scale(1.05)

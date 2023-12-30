@@ -33,7 +33,7 @@ const LoginHeader: React.FC<LoginHeaderProps> = ({ user }) => {
               localStorage.removeItem("shoppingCartId");
             }}
           >
-            <FontAwesomeIcon icon={faPowerOff} /> Logout
+            <FontAwesomeIcon icon={faPowerOff} /> <p>Logout</p>
           </a>
           <button className="username">
             <FontAwesomeIcon icon={faUser} /> {user.username}
@@ -41,7 +41,7 @@ const LoginHeader: React.FC<LoginHeaderProps> = ({ user }) => {
         </div>
       ) : (
         <button className="button-login" onClick={() => setOpen((old) => !old)}>
-          Account
+          <FontAwesomeIcon icon={faUser} /> <p>Account</p>
         </button>
       )}
       {open ? <LoginHeaderModal setOpen={setOpen} /> : null}

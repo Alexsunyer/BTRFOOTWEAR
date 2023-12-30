@@ -97,7 +97,9 @@ const OrderRightWindow: React.FC<OrderRightWindowProps> = ({ order }) => {
               <span>{totalProductQuantity}</span> item
             </h2>
           )}
-          <span>{order?.price}€</span>
+          <span>
+            {order?.price ? Math.round(order?.price * 100) / 100 : null}€
+          </span>
         </div>
         <ul className="order-products">{renderThis}</ul>
         {deliveryTo &&

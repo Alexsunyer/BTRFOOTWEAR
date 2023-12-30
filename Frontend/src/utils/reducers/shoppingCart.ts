@@ -104,7 +104,6 @@ export default function shoppingCart(
 
       let minusPrice = 0;
       if (existingProductIndex2 !== -1) {
-        console.log("i enter");
         const updatedProducts = [...state.ShoppingCartProducts];
         const existingProduct = updatedProducts[existingProductIndex2];
         minusPrice = parseFloat(String(existingProduct.Product.price));

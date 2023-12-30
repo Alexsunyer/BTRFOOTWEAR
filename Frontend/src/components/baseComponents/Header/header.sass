@@ -75,6 +75,9 @@
                 padding: 9px 20px
                 border-radius: 10px
                 color: #ffff
+        .logout, .button-login
+            display: flex
+            align-items: center
         .button-login
             background-color: rgb(126, 63, 63)
             padding: 9px 20px
@@ -83,7 +86,106 @@
             &:hover
                 background-color: rgb(145, 80, 80)
                 transform: scale(1.05)
+            svg
+                margin-right: 5px
     .logo
         object-fit: cover
         height: 100px
         width: 250px
+
+$mobile-breakpoint: 600px
+$tablet-breakpoint: 768px
+$desktop-breakpoint: 1024px
+
+@media screen and (max-width: $mobile-breakpoint)
+    .header-container
+        justify-content: center
+        .header-left
+            width: 25%
+            font-size: 2em
+            .product-search
+                width: 50px
+                height: 50px
+                padding-left: 10px
+                padding-top: 10px
+                .product-search-modal
+                    width: 340px
+        .header-center
+            width: 50%
+        .header-right
+            width: 25%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: flex-end
+            font-size: 13px
+            gap: 10px
+            &>div
+                margin-left: 0
+            .user-logged-navbar
+                display: flex
+                flex-direction: column
+                align-items: center
+                gap: 10px
+                svg
+                    margin-right: 0
+                .logout
+                    width: 45px
+                    height: 45px
+                    padding: 0
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    svg
+                        font-size: 20px
+                    p
+                        display: none
+                .username
+                    display: none
+            .logout, .button-login
+                display: inline-block
+            .button-login
+                padding: 0
+                width: 45px
+                height: 45px
+                svg
+                    margin-right: 0
+                    font-size: 20px
+                p
+                    display: none
+
+@media screen and (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint - 1)
+    .header-container
+        .header-left
+            .product-search
+                .product-search-modal
+                    width: 340px
+        .header-right
+            &>div
+                margin-left: 10px
+            .user-logged-navbar
+                .logout
+                    width: 45px
+                    height: 45px
+                    padding: 0
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    svg
+                        font-size: 20px
+                        margin: 0
+                    p
+                        display: none
+                .username
+                    display: none
+            .logout, .button-login
+                display: inline-block
+            .button-login
+                padding: 0
+                width: 45px
+                height: 45px
+                svg
+                    margin-right: 0
+                    font-size: 20px
+                p
+                    display: none

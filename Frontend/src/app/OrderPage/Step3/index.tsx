@@ -54,7 +54,7 @@ const Step3: React.FC<Step3Props> = ({ order, setStep }) => {
                   checked={paymentTypes.payment === "Credit card"}
                   onChange={handlePaymentTypesChange}
                 />
-                Credit Card
+                <p>Credit Card</p>
                 <ul className="creditCardsIMG">
                   <img src="/visaCard.png" alt="Visa" />
                   <img src="/masterCardCard.png" alt="MasterCard" />
@@ -141,25 +141,24 @@ const Step3: React.FC<Step3Props> = ({ order, setStep }) => {
                 <form className="new-billing-address-form">
                   <ul className="new-billing-address-form-list">
                     <li>
-                      <label htmlFor="address_1">Address 1</label>
                       <input
                         onChange={handlePaymentDetailsChange}
                         type="text"
                         name="address_1"
                         value={paymentDetails.BillingAddress?.address_1}
+                        placeholder="First address"
                       />
                     </li>
                     <li>
-                      <label htmlFor="address_2">Address 2</label>
                       <input
                         onChange={handlePaymentDetailsChange}
                         type="text"
                         name="address_2"
                         value={paymentDetails.BillingAddress?.address_2}
+                        placeholder="Second address"
                       />
                     </li>
                     <li>
-                      <label htmlFor="country">Country</label>
                       <CountrySelect
                         containerClassName="input-select"
                         onChange={(e: any) => {
@@ -169,11 +168,10 @@ const Step3: React.FC<Step3Props> = ({ order, setStep }) => {
                             country: e.name,
                           }));
                         }}
-                        placeHolder="Select Country"
+                        placeHolder="Country"
                       />
                     </li>
                     <li>
-                      <label htmlFor="state">State</label>
                       <StateSelect
                         containerClassName="input-select"
                         countryid={countryid}
@@ -184,11 +182,10 @@ const Step3: React.FC<Step3Props> = ({ order, setStep }) => {
                             state: e.name,
                           }));
                         }}
-                        placeHolder="Select State"
+                        placeHolder="State"
                       />
                     </li>
                     <li>
-                      <label htmlFor="city">City</label>
                       <CitySelect
                         containerClassName="input-select"
                         countryid={countryid}
@@ -199,16 +196,16 @@ const Step3: React.FC<Step3Props> = ({ order, setStep }) => {
                             city: e.name,
                           }));
                         }}
-                        placeHolder="Select City"
+                        placeHolder="City"
                       />
                     </li>
                     <li>
-                      <label htmlFor="postal_code">Postal code</label>
                       <input
                         onChange={handlePaymentDetailsChange}
                         type="text"
                         name="postal_code"
                         value={paymentDetails.BillingAddress?.postal_code}
+                        placeholder="Postal code"
                       />
                     </li>
                   </ul>

@@ -1,64 +1,105 @@
-.product-card
-    display: flex
+.product-page
     background-color: #F6F6F6
-    .product-info
+    padding-top: 20px
+    .product-card
         display: flex
-        flex-direction: column
-        justify-content: center
-        align-items: flex-start
-        width: 50%
-        margin: 100px 60px
-        padding: 0 40px
-        background-color: #ffff
-        h2
-            opacity: 0.5
-        h1
-            font-size: 50px
-            text-align: center
-            margin-bottom: 30px
-            font-family: 'Bebas Neue', sans-serif
-        .quantity-price
+        background-color: #F6F6F6
+        .product-info
             display: flex
-            gap: 20px
-            align-items: center
-            margin-bottom: 30px
-            .select-quantity
+            flex-direction: column
+            justify-content: center
+            align-items: flex-start
+            width: 50%
+            margin: 100px 60px
+            padding: 0 40px
+            background-color: #ffff
+            h2
+                opacity: 0.5
+            h1
+                font-size: 50px
+                text-align: center
+                margin-bottom: 30px
+                font-family: 'Bebas Neue', sans-serif
+            .quantity-price
                 display: flex
-                background-color: #ebebeb
-                border-radius: 20px
-                font-weight: bolder
-                border: 2px solid rgb(122, 53, 53)
-                input
-                    -webkit-appearance: textfield
-                    -moz-appearance: textfield
-                    appearance: textfield
-                    width: 50px
-                    text-align: center
-                    border: none
+                gap: 20px
+                align-items: center
+                margin-bottom: 30px
+                .select-quantity
+                    display: flex
                     background-color: #ebebeb
-                button
-                    border-radius: 50%
-                    padding: 0 13px
-                    font-size: 10px
-                    &:active
-                        background-color: #ceb5b5
-            span
-                font-size: 25px
-                font-weight: bolder
-                border-bottom: 4px solid rgba(122, 53, 53, 0.8)
-                line-height: 1
-        p
-            font-size: 20px
-            margin-bottom: 50px
-        .addToCart
-            color: #ffff
-            background-color: #8b3d3d
-            padding: 10px 28px
-            border: 1px solid rgba(180, 180, 180, 0.7)
-            border-radius: 10px
-            &:hover
-                background-color: #7a3535
-            svg
-                margin-right: 5px
-    img
-        width: 50%
+                    border-radius: 20px
+                    font-weight: bolder
+                    border: 2px solid rgb(122, 53, 53)
+                    input
+                        -webkit-appearance: textfield
+                        -moz-appearance: textfield
+                        appearance: textfield
+                        width: 50px
+                        text-align: center
+                        border: none
+                        background-color: #ebebeb
+                    button
+                        border-radius: 50%
+                        padding: 0 13px
+                        font-size: 10px
+                        &:active
+                            background-color: #ceb5b5
+                span
+                    font-size: 25px
+                    font-weight: bolder
+                    border-bottom: 4px solid rgba(122, 53, 53, 0.8)
+                    line-height: 1
+            p
+                font-size: 20px
+                margin-bottom: 50px
+            .addToCart
+                color: #ffff
+                background-color: #8b3d3d
+                padding: 10px 28px
+                border: 1px solid rgba(180, 180, 180, 0.7)
+                border-radius: 10px
+                &:hover
+                    background-color: #7a3535
+                svg
+                    margin-right: 5px
+        img
+            width: 50%
+
+$mobile-breakpoint: 600px
+$tablet-breakpoint: 768px
+$desktop-breakpoint: 1024px
+
+@media screen and (max-width: $mobile-breakpoint)
+    .product-page
+        padding-top: 5px
+        .product-card
+            flex-direction: column
+            .product-info
+                align-items: center
+                width: 100%
+                margin: 0
+                margin-bottom: 50px
+                padding: 20px 40px
+                p
+                    text-align: center
+                    margin-bottom: 30px
+            img
+                width: 100%
+
+@media screen and (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint - 1)
+    .product-page
+        .product-card
+            padding: 20px
+            .product-info
+                align-items: center
+                width: 100%
+                margin: 0
+                margin-bottom: 50px
+                padding: 20px 40px
+                p
+                    text-align: center
+                    margin-bottom: 30px
+            img
+                width: 350px
+                object-fit: contain

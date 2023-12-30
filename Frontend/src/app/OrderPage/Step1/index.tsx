@@ -37,27 +37,24 @@ const Step1: React.FC<Step1Props> = ({ order, setStep }) => {
       <h1>Shipping address</h1>
       <ul className="user-order-info-form-list">
         <li>
-          <label htmlFor="address_1">First address</label>
           <input
             onChange={handleChange}
             type="text"
             name="address_1"
             value={shippingAddress.address_1}
-            placeholder="Your address"
+            placeholder="First address"
           />
         </li>
         <li>
-          <label htmlFor="address_2">Second address</label>
           <input
             onChange={handleChange}
             type="text"
             name="address_2"
             value={shippingAddress.address_2}
-            placeholder="Flat number/house name"
+            placeholder="Second address"
           />
         </li>
         <li>
-          <label htmlFor="country">Country</label>
           <CountrySelect
             containerClassName="input-select"
             onChange={(e: any) => {
@@ -70,13 +67,12 @@ const Step1: React.FC<Step1Props> = ({ order, setStep }) => {
             placeHolder={
               order?.DeliveryTo?.country === "" ||
               order?.DeliveryTo?.country === undefined
-                ? "Select your country"
+                ? "Country"
                 : order?.DeliveryTo?.country
             }
           />
         </li>
         <li>
-          <label htmlFor="state">State</label>
           <StateSelect
             containerClassName="input-select"
             countryid={countryid}
@@ -90,13 +86,12 @@ const Step1: React.FC<Step1Props> = ({ order, setStep }) => {
             placeHolder={
               order?.DeliveryTo?.state === "" ||
               order?.DeliveryTo?.country === undefined
-                ? "Select your state"
+                ? "State"
                 : order?.DeliveryTo?.state
             }
           />
         </li>
         <li>
-          <label htmlFor="city">City</label>
           <CitySelect
             containerClassName="input-select"
             countryid={countryid}
@@ -110,29 +105,27 @@ const Step1: React.FC<Step1Props> = ({ order, setStep }) => {
             placeHolder={
               order?.DeliveryTo?.city === "" ||
               order?.DeliveryTo?.country === undefined
-                ? "Select your city"
+                ? "City"
                 : order?.DeliveryTo?.city
             }
           />
         </li>
         <li>
-          <label htmlFor="postal_code">Postal code</label>
           <input
             onChange={handleChange}
             type="text"
             name="postal_code"
             value={shippingAddress.postal_code}
-            placeholder="Your postal code"
+            placeholder="Postal code"
           />
         </li>
         <li>
-          <label htmlFor="phone">Phone</label>
           <input
             onChange={handleChange}
             type="text"
             name="phone"
             value={shippingAddress.phone}
-            placeholder="Your mobile phone"
+            placeholder="Mobile phone"
           />
         </li>
       </ul>

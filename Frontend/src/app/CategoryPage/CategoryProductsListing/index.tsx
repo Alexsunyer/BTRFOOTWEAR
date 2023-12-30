@@ -22,7 +22,7 @@ export const CategoryProductsListing: React.FC<
 
   return (
     <div className="products-container">
-      <ul className="products-listing">{renderThis}</ul>
+      <ul className="category-products-listing">{renderThis}</ul>
     </div>
   );
 };
